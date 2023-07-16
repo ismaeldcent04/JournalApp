@@ -10,7 +10,7 @@ COPY package.json package-lock.json ./
 # Instalar las dependencias utilizando npm ci
 RUN npm ci
 
-# Copiar todo el contenido del proyecto (excepto node_modules, ya que ya está instalado)
+# Copiar todo el contenido del proyecto excepto node_modules, ya que ya está instalado
 COPY . .
 
 # Exponer el puerto 5173 (el puerto especificado en tu vite.config.js)
